@@ -13,6 +13,10 @@ int main(void)
 	{
 		putchar(alphabets);
 	}
+	for (alphabets = 'A'; alphabets <= 'Z'; alphabet++)
+	{
+		putchar(alphabets);
+	}
 	putchar('\n');
 	return (0);
 }
