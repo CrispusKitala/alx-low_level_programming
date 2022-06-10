@@ -9,13 +9,13 @@
  */
 int main(void)
 {
-	long int, n = 612852475143;
+	long i, number = 612852475143;
 
-	for (int = 2; int <= n; i++)
+	for (i  = 2; i <= number; i++)
 	{
-		if (n % i == 0)
+		if (number % i == 0)
 		{
-			n = n / i;
+			number = number / i;
 			i--;
 		}
 	}
