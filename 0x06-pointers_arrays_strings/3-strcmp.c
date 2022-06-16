@@ -15,7 +15,6 @@ int _strcmp(char *s1, char *s2)
 	{
 		diff = *s1 - *s2;
 
-		/* break if either string is empty*/
 		if (*s1 == '\0' || *s2 == '\0')
 			break;
 
