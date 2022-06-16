@@ -9,14 +9,19 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0, op = 0;
+	int diff = 0;
 
-	while (op == 0)
+	while (diff == 0)
 	{
-		if ((*(s1 + i) == '\0') && (*(s2 + i) == '\0'))
+		diff = *s1 - *s2;
+
+		/* break if either string is empty*/
+		if (*s1 == '\0' || *s2 == '\0')
 			break;
-		op = *(s1 + i) - *(s2 + i);
-		i++;
+
+		s1++;
+		s2++;
 	}
-	return (0);
+
+	return (diff);
 }
